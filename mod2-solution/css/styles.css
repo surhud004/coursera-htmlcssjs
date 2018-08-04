@@ -1,1 +1,93 @@
+@media (min-width: 992px) {		/*desktop version*/
+	section {
+		position: relative;
+		width: 32%;		/*margin+(padding+border) = 32% instead of 33.33% as border-box does not include margins*/
+		float: left;
+		padding: 20px;
+		margin: 5px;
+		border: 3px solid black;
+	}
+	div {
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		padding: 3px;
+		border: 2px solid black;
+	}
+}
+		
+@media (min-width: 768px) and (max-width: 991px) {		/*tablet version*/
+	section {
+		position: relative;
+		width: 48%;		/*margin+(padding+border) = 48% instead of 50% as border-box does not include margins*/
+		float: left;
+		padding: 20px;
+		margin: 5px;
+		border: 3px solid black;
+	}
+	#s3 {
+		width: 97%;	/*margin+(padding+border) = 97% (to align with s1 & s2) instead of 100% as border-box does not include margins*/
+	}
+	div {
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		padding: 3px;
+		border: 2px solid black;
+	}	
+}
+		
+@media (max-width: 767px) {			/*mobile version*/
+	section {
+		position: relative;
+		width: 98%;		/*margin+(padding+border) = 98% instead of 100% as border-box does not include margins*/
+		float: left;
+		padding: 20px;
+		margin: 5px;
+		border: 3px solid black;
+	}
+	div {
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		padding: 3px;
+		border: 2px solid black;
+	}		
+}
 
+* {
+	box-sizing: border-box;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 175%;
+}
+
+section {
+	background-color: #B23A48;
+}
+
+p {
+	color: white;
+}
+
+div {
+	text-align: center;
+	font-weight: bold;
+	font-size: 125%;
+}
+
+#title1 {
+	background-color: #CCDCC8;
+}
+
+#title2 {
+	background-color: #F4E8C1;
+}
+
+#title3 {
+	background-color: #F4CFC1;
+}
